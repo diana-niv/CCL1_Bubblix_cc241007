@@ -3,7 +3,7 @@ Welcome to Orin's Workshop! Orin, the wizard, needs to brew a powerful potion, b
 
 # Screenshots
 ## Main Gameplay:
-![Gameplay Screenshot](UI-Gameplay.png)
+![Gameplay Screenshot](UIGameplay.png)
 *Figure 1: Collecting Hint for ingredients.*
 
 ## Menu and UI:
