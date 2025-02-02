@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bubblix</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div id="displayedText">
+    <p id="timerDisplay">Time left:</p>
+    <p id="collectedDisplay">Collected ingredients:</p>
+  </div>
+ 
+  <div id="gameContainer">
+    
+   
+    <div id="background"></div>
+    <canvas id="canvas" width="2000" height="660">
+    </canvas> 
+  </div>
+
+  <button id="instructionsButton" class="instructions-button">Instructions</button>
+  <div id="instructionsContainer" class="instructions-container">
+    <div class="instructions-content">
+        <p>Welcome to Orin's Workshop! Orin, the wizard, needs to brew a powerful potion, but his ingredients are missing! Your task is to help Orin find all the hidden ingredients scattered throughout the workshop. Each ingredient has been cleverly hidden, but don't worry — you'll receive hints that will guide you to their locations. Move around Orin's workshop to search for the hidden ingredients. Pay attention to the hints that will lead you to the correct spot. Every ingredient has a corresponding hint. If you think you've found the location where an ingredient is hidden, go to that spot. Once you find the ingredient, the next hint will appear to guide you to the next one. When you find an ingredient, press "C" to collect it. To open the current hint, press "Q". To close the hint block, press "E". Find all of Orin's ingredients and help him brew the potion! Good luck on your magical adventure!</p>
+        <p class="click-note">(Click anywhere on this window to close)</p>
+    </div>
+  </div>
+
+  
+  <script type="module" src="./scripts/modules/global.js"></script>
+  <script type="module" src="./scripts/modules/input.js"></script>
+  <script type="module" src="./scripts/modules/main.js"></script>
+  
+</body>
+</html>

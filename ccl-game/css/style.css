@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.jersey-10-regular, body, #gameContainer {
+    
+    font-family: "Jersey 10", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+#displayedText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 32px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#timerDisplay, #collectedDisplay, #instructions {
+    font-size: 32px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#instructions {
+    text-align: center;
+}
+
+#gameContainer {
+    position: relative;
+    width: 2000px; /* change according to your game */
+    height: 660px; /* change according to your game */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    background-color: #dda583;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#background {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 2000px; 
+    height: 660px;
+    background-image: url("../images/pixel-wood.png");
+    background-size: contain;
+
+}
+
+/* add styles for other HTML elements of your game */
+
+.instructions-button {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    padding: 10px 20px;
+    background-color: #4a3628;  /* dark brown */
+    color: white;
+    border: 2px solid #836b4d;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.instructions-button:hover {
+    background-color: #5a4638;  /* slightly lighter brown */
+}
+
+.instructions-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2b1810;  /* dark brown background */
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    max-width: 600px;
+    transition: opacity 0.3s ease;
+    border: 2px solid #836b4d;
+}
+
+.instructions-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.instructions-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.instructions-content p {
+    margin-bottom: 20px;
+}
+
+.click-note {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #999;
+    font-style: italic;
+}
